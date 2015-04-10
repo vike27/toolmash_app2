@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <div class="row">
+
+    <div class="index-container">
+    <h1>Listing Tools</h1>
+
+    <div>
+        <% @tools.each do |tool| %>
+            <div>Name:</div> 
+            <div><%= tool.name %></div> </br>
+            <div>Description:<div> 
+            <div><%= tool.description %></div> </br>
+            <div><%= link_to 'Show', tool_path(tool) %></div>
+            <div><%= link_to 'Edit', edit_tool_path(tool) %></div>
+            <div><%= link_to 'Delete', tool_path(tool), method: :delete, data: { confirm: 'Are you sure?' } %></div> </br>
+        <% end %>
+    </div>
+
+    <br>
+
+    <%= link_to 'New Tool', new_tool_path %>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
