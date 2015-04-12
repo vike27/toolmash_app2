@@ -3,11 +3,11 @@ Rails.application.routes.draw do
 
   root 'tools#index'
 
-  resources :users do
-    resources :tools
+  resources :tools do
+    get :manage, :on => :collection
   end
-  
-  resources :tools
+
+  resources :tools 
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

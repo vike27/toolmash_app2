@@ -5,13 +5,17 @@ before_action :authenticate_user!, only:[:new, :destroy, :edit], notice: 'you mu
 	def index
 		@tools = Tool.all
 	end
+
+	def manage
+		@user = current_user 
+		@tools = @user.tools
+	end
 	
 	def show
 	end
 
 	def new
-		@user = current_user
-    	@tool = @user.tools.build
+    	@tool = Tool.new 
 	end
 
 	def create
