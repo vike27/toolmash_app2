@@ -40,7 +40,7 @@ before_action :authenticate_user!, only:[:new, :destroy, :edit], notice: 'you mu
 	end
 
 	def tool_params
-		params.require(:tool).permit(:name, :description)
+		params.require(:tool).permit(:name, :description, :user_id)
 	end
 
 end
