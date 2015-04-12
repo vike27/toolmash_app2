@@ -12,6 +12,10 @@ This is the individual user page
         <% @tools.each do |tool| %>
             <div>Name:</div> 
             <div><%= tool.name %></div> </br>
+            <p>
+  				<strong>Image:</strong>
+  				<%= image_tag tool.tool_image.url(:medium) %>
+			</p>
             <div>Description:<div> 
             <div><%= tool.description %></div> </br>
             <div><%= link_to 'Show', tool_path(tool) %></div>

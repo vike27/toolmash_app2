@@ -10,6 +10,7 @@
         <% @tools.each do |tool| %>
             <div>Name:</div> 
             <div><%= tool.name %></div> </br>
+            <div><%= image_tag tool.tool_image.url(:medium) %></div>
             <div>Description:<div> 
             <div><%= tool.description %></div> </br>
             <div><%= link_to 'Show', tool_path(tool) %></div>
