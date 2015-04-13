@@ -2,16 +2,17 @@
 
 <div class="banner">
 
+  <div class="banner-container">
     <div class="tagline">
-        Your Turn To Earn
+        YOUR TURN TO EARN
     </div>
     <div class="sub-tagline">
-        Rent out your tools and help others get their job done.
+        Rent out your tools for passive income or rent tools to avoid having to purchase.
     </div>
         <div class="sign-up-buttons">
-          <button type="button" class="sign-in-button-container1 btn btn-lg">  
+          <button type="button" class="sign-in-button-container1 btn btn-danger btn-lg">  
                 <% if current_user.present? %>
-                    <%= link_to 'Sign Out',destroy_user_session_path, :method => :delete %>
+                    <%= link_to 'List a Tool', new_tool_path, :method => :delete %>
                 <% else %>
                     <%= link_to 'Sign In Now!', new_user_session_path %>
                 
@@ -21,6 +22,8 @@
                <% end %>
          </button>
         </div>
+  </div>
+</div>
 
 <div class="container">
   <div class="row">
