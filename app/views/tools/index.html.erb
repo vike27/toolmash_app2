@@ -2,7 +2,25 @@
 
 <div class="banner">
 
-</div>
+    <div class="tagline">
+        Your Turn To Earn
+    </div>
+    <div class="sub-tagline">
+        Rent out your tools and help others get their job done.
+    </div>
+        <div class="sign-up-buttons">
+          <button type="button" class="sign-in-button-container1 btn btn-lg">  
+                <% if current_user.present? %>
+                    <%= link_to 'Sign Out',destroy_user_session_path, :method => :delete %>
+                <% else %>
+                    <%= link_to 'Sign In Now!', new_user_session_path %>
+                
+         </button>
+         <button type="button" class="sign-in-button-container2 btn btn-default btn-lg">
+               <%= link_to 'Register Now!', new_user_registration_path %>
+               <% end %>
+         </button>
+        </div>
 
 <div class="container">
   <div class="row">
