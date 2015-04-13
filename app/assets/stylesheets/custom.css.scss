@@ -1,6 +1,55 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@import url(http://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300);
+
 .index-container {
 	margin:0 auto;
+}
+
+
+.navbar {
+   border: 0px;
+}
+
+.navbar-default  {
+    background: transparent;
+}
+
+.navbar li > a { 
+	color: #FFFFFF 
+} 
+
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+  padding-top: 35px;
+  padding-left: 25px;
+  font-size: 36px;
+  font-family: 'Lobster', cursive;
+}
+
+.navbar-container-right {
+	padding-top: 30px;
+	padding-right: 25px;
+	font-size: 16px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+}
+
+#notice {
+	background: transparent;
+	margin: 0px;
+}
+
+.alert {
+	margin-top: 60px;
+	margin-bottom: 0px;
+}
+
+.banner {
+	background-image: image-url('banner_image.jpg');
+	height: 680px;
+	margin-top: 0px;
+    background-attachment:fixed;
+    background-size:cover;
 }
