@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  root 'tools#index'
+  root 'pages#home'
 
   resources :tools do
     get :manage, :on => :collection
   end
 
-  resources :tools 
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
