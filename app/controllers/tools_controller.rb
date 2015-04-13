@@ -1,6 +1,6 @@
 class ToolsController < ApplicationController
 before_action :set_tool, only:[:show, :edit, :update, :destroy]
-before_action :authenticate_user!, only:[:new, :destroy, :edit], notice: 'you must be logged in to proceed'
+before_action :authenticate_user!, only:[:new, :destroy, :edit, :manage], notice: 'you must be logged in to proceed'
 
 	def index
 		@tools = Tool.all
@@ -20,8 +20,12 @@ before_action :authenticate_user!, only:[:new, :destroy, :edit], notice: 'you mu
 
 	def create
 		@tool = Tool.new(tool_params)
-		@tool.save
-		redirect_to @tool
+		if @tool.save
+			redirect_to @tool
+		else
+			redirect_to :action => "new"
+			flash[:notice] = "You did not fill out all the fields"
+		end
 	end
 
 	def edit
