@@ -34,20 +34,13 @@
 
   <div class="row">
 
-    <div class="col-md-4 event-type">
-      <div class="event-container">
-        <h3>Weddings</h3>
-        </br>
-          <ul>
-            <li>Expertise as a professional DJ/emcee</li>
-            <li>Pre-Event consultations with your DJ/emcee</li>
-            <li>Professional sound systems</li>
-            <li>Music and audio for the ceremony</li>
-            <li>Wireless microphones</li>
-            <li>Dance Lighting</li>
-            <li>Custom Grand Entrances and introductions</li>
-            <li>An extensive music library</li>
-          </ul>
+    <div class="col-md-4 tool-type">
+      <div class="tool-container">
+        <% tool1 = @tools.sample %>
+          <%= tool1.name %>
+          <%= tool1.tool_image %>
+          <%= tool1.description %>
+        
         </br>
         <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
       </div>

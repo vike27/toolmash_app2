@@ -1,29 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<div class="banner">
-
-  <div class="banner-container">
-    <div class="tagline">
-        YOUR TURN TO EARN
-    </div>
-    <div class="sub-tagline">
-        Rent out your tools for passive income or rent tools to avoid having to purchase.
-    </div>
-        <div class="sign-up-buttons">
-          <button type="button" class="sign-in-button-container1 btn btn-danger btn-lg">  
-                <% if current_user.present? %>
-                    <%= link_to 'List a Tool', new_tool_path %>
-                <% else %>
-                    <%= link_to 'Sign In Now!', new_user_session_path %>
-                
-         </button>
-         <button type="button" class="sign-in-button-container2 btn btn-default btn-lg">
-               <%= link_to 'Register Now!', new_user_registration_path %>
-               <% end %>
-         </button>
-        </div>
-  </div>
-</div>
 
 <div class="container">
   <div class="row">
@@ -35,7 +11,7 @@
         <% @tools.each do |tool| %>
             <div>Name:</div> 
             <div><%= tool.name %></div> </br>
-            <div><%= image_tag tool.tool_image.url(:medium) %></div>
+            <div><%= image_tag tool.tool_image.url(:thumb) %></div>
             <div>Description:<div> 
             <div><%= tool.description %></div> </br>
             <div><%= link_to 'Show', tool_path(tool) %></div>
