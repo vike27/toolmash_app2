@@ -90,3 +90,39 @@
 	 padding-left: 35px;
 	 font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
+
+//** highlighted tools sections **//
+
+
+#services {
+	background-color: #222222;
+	color: white;
+	font-family: 'Rokkitt', serif;
+	padding-bottom: 50px;
+	margin: 0px;
+}
+
+.event-type {
+}
+
+.event-container {
+	background-color: white;
+	color: #222222;
+	text-align: center;
+	font-size: 16px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+
+.event-container li {
+	text-align: left;
+}
+
+.glyphicon {
+	font-size: 85px;
+}
