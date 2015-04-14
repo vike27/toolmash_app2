@@ -11,10 +11,15 @@
 
 .navbar {
    border: 0px;
+   background: transparent;
 }
 
-.navbar-default  {
+#navigation {
     background: transparent;
+}
+
+.container-fluid {
+	background: transparent;
 }
 
 .navbar li > a { 
@@ -52,7 +57,7 @@
 .banner {
 	background-image: image-url('banner_image.jpg');
 	height: 680px;
-	margin-top: 0px;
+	margin-top: -90px;
     background-attachment:fixed;
     background-size:cover;
 }
@@ -94,7 +99,7 @@
 //** highlighted tools sections **//
 
 
-#services {
+#home-tool-wrapper {
 	background-color: #222222;
 	color: white;
 	font-family: 'Rokkitt', serif;
@@ -102,10 +107,14 @@
 	margin: 0px;
 }
 
-.event-type {
+.home-tools {
+	margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background-color: #FFFFFF;
 }
 
-.event-container {
+.home-tool-container {
 	background-color: white;
 	color: #222222;
 	text-align: center;
@@ -119,10 +128,7 @@
 	padding-top: 25px;
 }
 
-.event-container li {
-	text-align: left;
-}
-
-.glyphicon {
-	font-size: 85px;
+.home-tool-image {
+	height: 90px;
+	width: 90px;
 }

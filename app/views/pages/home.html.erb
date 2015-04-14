@@ -28,99 +28,93 @@
 
 <!-- highlighted tools section -->
 
-<div class="container-fluid" id="services">
+<div class="container-fluid" id="home-tool-wrapper">
 
-  <div class="row">
+  <div class="home-heading">
+    <h1>Whats Popular</h1>
+  </div>
+  
+  <div class="home-tools">
 
-    <div class="col-md-4 event-type">
-      <div class="event-container">
-        <h3>Weddings</h3>
-        </br>
-          <ul>
-          <% tool1 = @tools.sample %>
-          <%= tool1.name %>
-          <%= image_tag tool1.tool_image.url(:thumb)  %>
-          <%= tool1.description %>
-          </ul>
-        </br>
-      </div>
-    </div>  
+    <div class="row">
 
-    <div class="col-md-4 event-type">
-        <div class="event-container">
-          <h3>Corporate Events</h3>
-          </br>
-            <ul>
-            <% tool2 = @tools.sample %>
-            <%= tool2.name %>
-            <%= image_tag tool2.tool_image.url(:thumb)  %>
-            <%= tool2.description %>
-             </ul>
+      <div class="col-md-4">
+        <div class="home-tool-container">
+            <% tool1 = @tools.sample %>
+            <div class="home-tool-image">
+              <%= image_tag tool1.tool_image.url(:medium) %>
+            </div>
+            <%= tool1.name %>
+            <%= tool1.description %>
           </br>
         </div>
-      </div> 
+      </div>  
 
-    <div class="col-md-4 event-type">
-      <div class="event-container">
-        <h3>Parties</h3>
-        </br>
-        <ul>
-          <% tool3 = @tools.sample %>
-          <%= tool3.name %>
-          <%= image_tag tool3.tool_image.url(:thumb)  %>
-          <%= tool3.description %>
-        </ul>
-        </br>
-     </div>
-    </div>                        
+      <div class="col-md-4">
+          <div class="home-tool-container">
+              <% tool2 = @tools.sample %>
+              <div class="home-tool-image">
+                <%= image_tag tool2.tool_image.url(:medium) %>
+              </div>
+              <%= tool2.name %>
+              <%= tool2.description %>
+            </br>
+          </div>
+        </div> 
 
-  </div>
+      <div class="col-md-4">
+        <div class="home-tool-container">
+            <% tool3 = @tools.sample %>
+            <div class="home-tool-image">
+              <%= image_tag tool3.tool_image.url(:medium) %>
+            </div>
+            <%= tool3.name %>
+            <%= tool3.description %>
+          </br>
+       </div>
+      </div>                        
+
+    </div>
 
   <!--second highlighted tools row-->
 
-  <div class="row">
+    <div class="row">
 
-    <div class="col-md-4 event-type">
-      <div class="event-container">
-        <h3>Church Dances / Activities</h3>
-        </br>
-         <ul>
-          <% tool4 = @tools.sample %>
-          <%= tool4.name %>
-          <%= image_tag tool4.tool_image.url(:thumb)  %>
-          <%= tool4.description %>
-        </ul>
-        </br>
-      </div>
-    </div>  
-
-    <div class="col-md-4 event-type">
-        <div class="event-container">
-          <h3>Bar Mitzvah</h3>
-          </br>
-           <ul>
-            <% tool5 = @tools.sample %>
-            <%= tool5.name %>
-            <%= image_tag tool5.tool_image.url(:thumb)  %>
-            <%= tool5.description %>
-           </ul>
-          </br>
+      <div class="col-md-4">
+        <div class="home-tool-container">
+            <% tool4 = @tools.sample %>
+            <div class="home-tool-image">
+              <%= image_tag tool4.tool_image.url(:medium) %>
+            </div>
+            <%= tool4.name %>
+            <%= tool4.description %>
         </div>
-      </div> 
+      </div>  
 
-    <div class="col-md-4 event-type">
-      <div class="event-container">
-        <h3>School</h3>
-        </br>
-         <ul>
-          <% tool6 = @tools.sample %>
-          <%= tool6.name %>
-          <%= image_tag tool6.tool_image.url(:thumb) %>
-          <%= tool6.description %>
-         </ul>
-        </br>
-     </div>
-    </div>                        
+      <div class="col-md-4">
+          <div class="home-tool-container">
+              <% tool5 = @tools.sample %>
+              <div class="home-tool-image">
+                <%= image_tag tool5.tool_image.url(:medium) %>
+              </div>
+              <%= tool5.name %>
+              <%= tool5.description %>
+          </div>
+        </div> 
+
+      <div class="col-md-4">
+        <div class="home-tool-container">
+            <% tool6 = @tools.sample %>
+            <div class="home-tool-image">
+              <%= image_tag tool6.tool_image.url(:medium) %>
+            </div>
+            <%= tool6.name %>
+            <%= tool6.description %>
+          </br>
+       </div>
+      </div>
+
+    </div>
 
   </div>
 </div>
