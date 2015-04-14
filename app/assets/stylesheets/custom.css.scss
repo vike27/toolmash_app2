@@ -100,35 +100,42 @@
 
 
 #home-tool-wrapper {
-	background-color: #222222;
+	background-color: #FFFFFF;
 	color: white;
-	font-family: 'Rokkitt', serif;
 	padding-bottom: 50px;
 	margin: 0px;
 }
 
+.home-heading h3 {
+	padding-top: 40px;
+	padding-left: 160px;
+	color: #333333;
+	font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 500; 
+}
+
 .home-tools {
+	padding-top: 40px;
 	margin-left: auto;
     margin-right: auto;
     width: 1000px;
     background-color: #FFFFFF;
 }
 
+.home-tool-row {
+	margin-bottom: 30px;
+}
+
 .home-tool-container {
+	height: 500px;
+	width: 305px;
 	background-color: white;
 	color: #222222;
-	text-align: center;
-	font-size: 16px;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 40px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 25px;
-	padding-top: 25px;
+	border: solid 1px #d9d9de;
 }
 
 .home-tool-image {
-	height: 90px;
-	width: 90px;
+	height: 300px;
+	width: 300px;
+	text-align: center;
 }
