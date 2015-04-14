@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <!-- banner section -->
-
 <div class="banner">
 
   <div class="banner-container">
@@ -27,22 +26,23 @@
   </div>
 </div>
 
-
 <!-- highlighted tools section -->
 
 <div class="container-fluid" id="services">
 
   <div class="row">
 
-    <div class="col-md-4 tool-type">
-      <div class="tool-container">
-        <% tool1 = @tools.sample %>
-          <%= tool1.name %>
-          <%= tool1.tool_image %>
-          <%= tool1.description %>
-        
+    <div class="col-md-4 event-type">
+      <div class="event-container">
+        <h3>Weddings</h3>
         </br>
-        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+          <ul>
+          <% tool1 = @tools.sample %>
+          <%= tool1.name %>
+          <%= image_tag tool1.tool_image.url(:thumb)  %>
+          <%= tool1.description %>
+          </ul>
+        </br>
       </div>
     </div>  
 
@@ -50,18 +50,13 @@
         <div class="event-container">
           <h3>Corporate Events</h3>
           </br>
-          <ul>
-            <li>Professional DJ/Emcee 6 + years of experience</li>
-            <li>Pre-Event DJ consultations</li>
-            <li>Pre-planning materials, up-to-date song list</li>
-            <li>Professional audio & Wireless microphones</li>
-            <li>An extensive music library</li>
-            <li>Music requests throughout the night</li>
-            <li>LED Dance lighting</li>
-            <li>Set up, take down, and travel expenses</li>
-           </ul>
+            <ul>
+            <% tool2 = @tools.sample %>
+            <%= tool2.name %>
+            <%= image_tag tool2.tool_image.url(:thumb)  %>
+            <%= tool2.description %>
+             </ul>
           </br>
-          <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>
         </div>
       </div> 
 
@@ -70,22 +65,16 @@
         <h3>Parties</h3>
         </br>
         <ul>
-          <li>Expertise as a professional DJ/emcee</li>
-          <li>Pre-Event consultations with your DJ/emcee</li>
-          <li>Professional sound systems</li>
-          <li>Music and audio for the ceremony</li>
-          <li>Wireless microphones</li>
-          <li>Dance Lighting</li>
-          <li>Custom Grand Entrances and introductions</li>
-          <li>An extensive music library</li>
+          <% tool3 = @tools.sample %>
+          <%= tool3.name %>
+          <%= image_tag tool3.tool_image.url(:thumb)  %>
+          <%= tool3.description %>
         </ul>
         </br>
-        <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
      </div>
     </div>                        
 
   </div>
-
 
   <!--second highlighted tools row-->
 
@@ -96,17 +85,12 @@
         <h3>Church Dances / Activities</h3>
         </br>
          <ul>
-          <li>A Professional DJ/Emcee</li>
-          <li>Pre-Event DJ consultations</li>
-          <li>Pre-planning materials</li>
-          <li>Professional audio & Wireless microphones</li>
-          <li>An extensive music library</li>
-          <li>Music requests throughout the night</li>
-          <li>LED Dance lighting</li>
-          <li>Set up, take down, and travel expenses</li>
+          <% tool4 = @tools.sample %>
+          <%= tool4.name %>
+          <%= image_tag tool4.tool_image.url(:thumb)  %>
+          <%= tool4.description %>
         </ul>
         </br>
-        <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
       </div>
     </div>  
 
@@ -115,17 +99,12 @@
           <h3>Bar Mitzvah</h3>
           </br>
            <ul>
-            <li>Professional DJ/Emcee 6 + years of experience</li>
-            <li>Pre-Event DJ consultations</li>
-            <li>Pre-planning materials, up-to-date song list</li>
-            <li>Professional audio & Wireless microphones</li>
-            <li>An extensive music library</li>
-            <li>Music requests throughout the night</li>
-            <li>LED Dance lighting</li>
-            <li>Additional packages such as dancers also available</li>
+            <% tool5 = @tools.sample %>
+            <%= tool5.name %>
+            <%= image_tag tool5.tool_image.url(:thumb)  %>
+            <%= tool5.description %>
            </ul>
           </br>
-          <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
         </div>
       </div> 
 
@@ -134,17 +113,12 @@
         <h3>School</h3>
         </br>
          <ul>
-          <li>A Professional DJ/Emcee</li>
-          <li>Pre-Event DJ consultations</li>
-          <li>Pre-planning materials</li>
-          <li>Professional audio & Wireless microphones</li>
-          <li>An extensive music library</li>
-          <li>Music requests throughout the night</li>
-          <li>LED Dance lighting</li>
-          <li>Set up, take down, and travel expenses</li>
+          <% tool6 = @tools.sample %>
+          <%= tool6.name %>
+          <%= image_tag tool6.tool_image.url(:thumb) %>
+          <%= tool6.description %>
          </ul>
         </br>
-        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
      </div>
     </div>                        
 
