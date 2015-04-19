@@ -20,8 +20,14 @@
     <%= f.text_area :description %>
   </div>
   <div class="field">
+    <%= f.label :rent_price_per_day %><br>
+    $<%= f.text_field :rent_price %>.00
+  </div>
+  </br>
+  <div class="field">
     <%= f.file_field :tool_image %>
   </div>
+  </br>
   <div class="actions">
     <%= f.submit %>
   </div>

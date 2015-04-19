@@ -15,6 +15,11 @@
   <%= @tool.description %>
 </p>
 
+<p>
+  <strong>Tool Price:</strong>
+  $<%= @tool.rent_price %>.00 / day
+</p>
+
 <%= link_to 'Rent This Item', new_tool_charge_path(@tool) %> |
 
 <%= link_to 'Edit', edit_tool_path(@tool) %> |

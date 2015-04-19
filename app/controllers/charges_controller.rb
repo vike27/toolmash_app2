@@ -1,11 +1,13 @@
 class ChargesController < ApplicationController
 
 	def new
+	  @tool = Tool.find(params[:tool_id])
+	  @amount = @tool.rent_price * 100
 	end
 
 	def create
-	  # Amount in cents
-	  @amount = 500
+	  @tool = Tool.find(params[:tool_id])
+	  @amount = @tool.rent_price * 100
 
 	  customer = Stripe::Customer.create(
 	    :email => 'example@stripe.com',
@@ -23,5 +25,11 @@ class ChargesController < ApplicationController
 	  flash[:error] = e.message
 	  redirect_to charges_path
 	end
-	
+
+	private
+
+	def tool_params
+		params.require(:tool).permit(:name, :description, :user_id, :tool_image, :rent_price)
+	end
+
 end
