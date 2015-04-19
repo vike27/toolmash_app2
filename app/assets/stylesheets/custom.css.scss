@@ -23,11 +23,11 @@
 }
 
 .navbar li > a { 
-	color: #FFFFFF 
+	color: #FFFFFF;
 } 
 
 .navbar-default .navbar-brand {
-  color: #FFFFFF;
+  color: #d9534f;
   padding-top: 35px;
   padding-left: 25px;
   font-size: 36px;
@@ -96,6 +96,7 @@
 	 font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
+
 //** highlighted tools sections **//
 
 
@@ -154,4 +155,31 @@
 .home-tool-details {
 	position: absolute;
     bottom: 0;
+}
+
+/*----footer ----*/
+
+.footer {
+	background-color: #d9534f;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.bottom-container {
+	margin-left: auto;
+    margin-right: auto;
+	text-align:center;
+}
+
+.email-block {
+	margin-top: 25px;
+	color: white;
+	font-size: 20px;
+}
+
+.footer-img {
+	padding-left: 15px;
+	padding-right: 15px;
+    border-radius: 50%;
 }
