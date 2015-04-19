@@ -4,8 +4,11 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   resources :tools do
+    resources :charges
     get :manage, :on => :collection
   end
+
+
 
 
 
