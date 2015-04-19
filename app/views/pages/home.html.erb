@@ -38,19 +38,20 @@
 
     <div class="row home-tool-row">
 
+    <% @tools.each do |tool| %>
+
       <div class="col-md-4">
         <div class="home-tool-container">
-            <% tool1 = @tools.sample %>
             <div class="home-tool-image">
-              <%= image_tag tool1.tool_image.url(:medium) %>
+              <%= image_tag tool.tool_image.url(:medium) %>
             </div>
             <div class="home-tool-body">
               <div class="home-tool-text">
                 <div class="home-tool-name">
-                  <%= tool1.name %>
+                  <%= tool.name %>
                 </div>
                 <div class="home-tool-description">
-                  <%= tool1.description %>
+                  <%= tool.description %>
                 </div>
               </div>
               <div class="home-tool-details">
@@ -60,129 +61,11 @@
           </br>
         </div>
       </div>  
-
-      <div class="col-md-4">
-        <div class="home-tool-container">
-            <% tool2 = @tools.sample %>
-            <div class="home-tool-image">
-              <%= image_tag tool2.tool_image.url(:medium) %>
-            </div>
-            <div class="home-tool-body">
-              <div class="home-tool-text">
-                <div class="home-tool-name">
-                  <%= tool2.name %>
-                </div>
-                <div class="home-tool-description">
-                  <%= tool2.description %>
-                </div>
-              </div>
-              <div class="home-tool-details">
-                <p>$35 / week</p>
-              </div>
-            </div>
-          </br>
-        </div>
-      </div> 
-
-      <div class="col-md-4">
-        <div class="home-tool-container">
-            <% tool3 = @tools.sample %>
-            <div class="home-tool-image">
-              <%= image_tag tool3.tool_image.url(:medium) %>
-            </div>
-            <div class="home-tool-body">
-              <div class="home-tool-text">
-                <div class="home-tool-name">
-                  <%= tool3.name %>
-                </div>
-                <div class="home-tool-description">
-                  <%= tool3.description %>
-                </div>
-              </div>
-              <div class="home-tool-details">
-                <p>$20 / week</p>
-              </div>
-            </div>
-          </br>
-        </div>
-      </div>                         
-
-    </div>
+    <% end %>
+  </div>
 
   <!--second highlighted tools row-->
 
-    <div class="row home-tool-row">
-
-      <div class="col-md-4">
-        <div class="home-tool-container">
-            <% tool4 = @tools.sample %>
-            <div class="home-tool-image">
-              <%= image_tag tool4.tool_image.url(:medium) %>
-            </div>
-            <div class="home-tool-body">
-              <div class="home-tool-text">
-                <div class="home-tool-name">
-                  <%= tool4.name %>
-                </div>
-                <div class="home-tool-description">
-                  <%= tool4.description %>
-                </div>
-              </div>
-              <div class="home-tool-details">
-                <p>$25 / week</p>
-              </div>
-            </div>
-          </br>
-        </div>
-      </div>  
-
-      <div class="col-md-4">
-        <div class="home-tool-container">
-            <% tool5 = @tools.sample %>
-            <div class="home-tool-image">
-              <%= image_tag tool5.tool_image.url(:medium) %>
-            </div>
-            <div class="home-tool-body">
-              <div class="home-tool-text">
-                <div class="home-tool-name">
-                  <%= tool5.name %>
-                </div>
-                <div class="home-tool-description">
-                  <%= tool5.description %>
-                </div>
-              </div>
-              <div class="home-tool-details">
-                <p>$25 / week</p>
-              </div>
-            </div>
-          </br>
-        </div>
-      </div> 
-
-      <div class="col-md-4">
-        <div class="home-tool-container">
-            <% tool6 = @tools.sample %>
-            <div class="home-tool-image">
-              <%= image_tag tool1.tool_image.url(:medium) %>
-            </div>
-            <div class="home-tool-body">
-              <div class="home-tool-text">
-                <div class="home-tool-name">
-                  <%= tool6.name %>
-                </div>
-                <div class="home-tool-description">
-                  <%= tool6.description %>
-                </div>
-              </div>
-              <div class="home-tool-details">
-                <p>$15 / week</p>
-              </div>
-            </div>
-          </br>
-        </div>
-      </div> 
-
-    </div>
 
   </div>
 </div>

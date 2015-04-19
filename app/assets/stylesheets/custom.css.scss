@@ -108,7 +108,7 @@
 }
 
 .home-heading h3 {
-	padding-top: 40px;
+	padding-top: 50px;
 	padding-left: 160px;
 	color: #333333;
 	font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -116,7 +116,7 @@
 }
 
 .home-tools {
-	padding-top: 40px;
+	padding-top: 50px;
 	margin-left: auto;
     margin-right: auto;
     width: 1000px;
@@ -133,6 +133,7 @@
 	background-color: white;
 	color: #222222;
 	border: solid 1px #d9d9de;
+	margin-bottom: 30px;
 }
 
 .home-tool-image {
@@ -155,6 +156,7 @@
 .home-tool-details {
 	position: absolute;
     bottom: 0;
+    margin-bottom: 30px;
 }
 
 /*----footer ----*/
