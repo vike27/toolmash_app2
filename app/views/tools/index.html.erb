@@ -1,34 +1,44 @@
 <p id="notice"><%= notice %></p>
 
 
-<div class="container">
+
+<div class="fluid-container index-page-container">
   <div class="row">
 
     <div class="index-container">
-    <h1>Listing Tools</h1>
+        
+        <div>
+            <%= form_tag tools_path, :method => 'get' do %>
+                <p> 
+                  <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+                  <%= submit_tag "Submit", :name => nil %>
+                </p>
+            <% end %>
+        </div>
 
-    <div>
-        <% @tools.each do |tool| %>
-            <div>Name:</div> 
-            <div><%= tool.name %></div> </br>
-            <div><%= image_tag tool.tool_image.url(:thumb) %></div>
-            <div>Description:<div> 
-            <div><%= tool.description %></div> </br>
-            <div><%= link_to 'Show', tool_path(tool) %></div>
-            <div><%= link_to 'Edit', edit_tool_path(tool) %></div>
-            <div><%= link_to 'Delete', tool_path(tool), method: :delete, data: { confirm: 'Are you sure?' } %></div> </br>
-        <% end %>
-    </div>
+        <h1>Listing Tools</h1>
 
-    <br>
+        <div>
+            <% @tools.each do |tool| %>
+                <div>Name:</div> 
+                <div><%= tool.name %></div> </br>
+                <div><%= image_tag tool.tool_image.url(:thumb) %></div>
+                <div>Description:<div> 
+                <div><%= tool.description %></div> </br>
+                <div><%= link_to 'Show', tool_path(tool) %></div>
+                <div><%= link_to 'Edit', edit_tool_path(tool) %></div>
+                <div><%= link_to 'Delete', tool_path(tool), method: :delete, data: { confirm: 'Are you sure?' } %></div> </br>
+            <% end %>
+        </div>
 
-    <%= link_to 'New Tool', new_tool_path %>
+        <br>
+
+        <%= link_to 'New Tool', new_tool_path %>
 
     </div>
 
   </div>
 </div>
-
 
 
 

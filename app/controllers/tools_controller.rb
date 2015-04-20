@@ -3,7 +3,11 @@ before_action :set_tool, only:[:show, :edit, :update, :destroy]
 before_action :authenticate_user!, only:[:new, :destroy, :edit, :manage], notice: 'you must be logged in to proceed'
 
 	def index
-		@tools = Tool.all
+		if params[:search]
+			@tools = Tool.search(params[:search]).order("created_at DESC")
+		else
+			@tools = Tool.all.order('created_at DESC')
+		end
 	end
 
 	def manage

@@ -6,4 +6,10 @@ class Tool < ActiveRecord::Base
 
 	validates :name, :description, presence: true
 	validates :tool_image, :attachment_presence => true
+
+
+	def self.search(query)
+		where("name like?","%#{query}%")
+	end
+
 end
