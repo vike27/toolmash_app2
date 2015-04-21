@@ -43,7 +43,7 @@
       <div class="col-md-4">
         <div class="home-tool-container">
             <div class="home-tool-image">
-              <%= image_tag tool.tool_image.url(:medium) %>
+              <%= link_to(image_tag(tool.tool_image.url(:medium)), tool_path(tool.id)) %>
             </div>
             <div class="home-tool-body">
               <div class="home-tool-text">
@@ -55,7 +55,7 @@
                 </div>
               </div>
               <div class="home-tool-details">
-                <p>$25 / week</p>
+                $ <%= tool.rent_price %>.00
               </div>
             </div>
           </br>

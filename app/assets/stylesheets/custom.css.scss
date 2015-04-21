@@ -136,7 +136,7 @@
 }
 
 .home-tool-container {
-	height: 500px;
+	height: 560px;
 	width: 305px;
 	background-color: white;
 	color: #222222;
@@ -145,13 +145,14 @@
 }
 
 .home-tool-image {
-	height: 300px;
+	height: 250px;
 	width: 300px;
 	text-align: center;
 }
 
 .home-tool-body {
 	padding-left: 10px;
+	border-top: solid 1px #d9d9de;
 	font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
@@ -159,12 +160,46 @@
 	font-weight: 900;
 	font-size: 20px;
 	margin-bottom: 15px;
+	padding-top: 10px;
 }
 
 .home-tool-details {
 	position: absolute;
     bottom: 0;
+    padding-bottom: 5px;
     margin-bottom: 30px;
+}
+
+/**---aboutpage---**/
+
+.about-container {
+	height: 550px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 20px;
+	padding-left: 100px;
+	padding-right: 130px;
+	padding-top: 30px;
+	text-align: justify;
+}
+
+.about-left {
+	padding-right: 50px;
+}
+
+.about-left h1 {
+	padding-bottom: 30px;
+}
+
+.about-right {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 24px;
+	background-color: #d9534f;
+	color: white; 
+	margin-top: 100px;
 }
 
 /*----footer ----*/
