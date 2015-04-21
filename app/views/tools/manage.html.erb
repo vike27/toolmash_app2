@@ -1,35 +1,40 @@
-This is the individual user page
+<div class="large-manage-container">
+    <div class="container-fluid">
+        <div class="manage-container">
 
-<p id="notice"><%= notice %></p>
+            <h1>My Tools</h1>
 
-<div class="container">
-  <div class="row">
+              <div class="manage-tools">
 
-    <div class="index-container">
-    <h1>Listing Tools</h1>
-This is the individual user page
-    <div>
-        <% @tools.each do |tool| %>
-            <div>Name:</div> 
-            <div><%= tool.name %></div> </br>
-            <p>
-  				<strong>Image:</strong>
-  				<%= image_tag tool.tool_image.url(:medium) %>
-			</p>
-            <div>Description:<div> 
-            <div><%= tool.description %></div> </br>
-            <div><%= link_to 'Show', tool_path(tool) %></div>
-            <div><%= link_to 'Edit', edit_tool_path(tool) %></div>
-            <div><%= link_to 'Delete', tool_path(tool), method: :delete, data: { confirm: 'Are you sure?' } %></div> </br>
-        <% end %>
+                <div class="row manage-tool-row">
+                <% @tools.each do |tool| %>
+                <div class="col-md-2 small-manage-boxes">
+                  <div class="manage-tool-container">
+                    <div class="manage-tool-image">
+                      <div><%= link_to(image_tag(tool.tool_image.url(:thumb)), tool_path(tool.id)) %></div>
+                    </div>
+                    <div class="manage-tool-body">
+                      <div class="manage-tool-text">
+                        <div class="manage-tool-name">
+                          <div><%= tool.name %></div>
+                        </div>
+                        <div class="manage-tool-blurb">
+                          <div><%= tool.blurb %></div> </br>
+                        </div>
+                        <div class="manage-tool-details">
+                          <div><%= link_to 'Edit', edit_tool_path(tool) %></div>
+                          <div><%= link_to 'Delete', tool_path(tool), method: :delete, data: { confirm: 'Are you sure?' } %></div>
+                          <div>$ <%= tool.rent_price %>.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <% end %>
+                </div>
+              </div>
+            <br>
+
+      </div>
     </div>
-
-    <br>
-
-    <%= link_to 'New Tool', new_tool_path %>
-
-    </div>
-
-  </div>
 </div>
-
