@@ -196,10 +196,39 @@
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align: center;
-	font-size: 24px;
+	font-size: 22px;
 	background-color: #d9534f;
 	color: white; 
 	margin-top: 100px;
+}
+
+/**--contact----*/
+
+.contact-container {
+	height: 550px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 20px;
+	padding-left: 100px;
+	padding-right: 130px;
+	padding-top: 20px;
+	text-align: justify;
+}
+
+.contact-left {
+	padding-right: 50px;
+}
+
+.contact-left h1 {
+	padding-bottom: 30px;
+}
+
+.contact-right {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 22px;
+	color: white; 
 }
 
 /*----footer ----*/
