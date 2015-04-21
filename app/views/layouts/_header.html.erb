@@ -27,20 +27,25 @@
           <%= link_to 'Contact', contact_path %>
         </li>
         <li>
-          <%= link_to 'Manage', manage_tools_path %>
-        </li>
-        <li>
           <%= link_to 'Add Tool', new_tool_path %>
         </li>
+        <li>
+              <% if current_user.present? %>
+          <%= link_to 'Manage', manage_tools_path %>
+              <% end %>
+        </li>
         <li>  
-            <% if current_user.present? %>
-                <%= link_to 'Sign Out',destroy_user_session_path, :method => :delete %>
-            <% else %>
-                <%= link_to 'Sign In', new_user_session_path %>
+              <% if current_user.present? %>
+          <%= link_to 'Sign Out',destroy_user_session_path, :method => :delete %>
+        
+              <% else %>
+        
+          <%= link_to 'Sign In', new_user_session_path %>
         </li>
         <li>
-                <%= link_to 'Register Now!', new_user_registration_path %>
-            <% end %>
+          <%= link_to 'Register Now!', new_user_registration_path %>
+              <% end %>
+
         </li>
         
       </ul>

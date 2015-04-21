@@ -50,16 +50,6 @@
 	padding-top: 2.5px;
 }
 
-#notice {
-	background: transparent;
-	margin: 0px;
-}
-
-.alert {
-	margin-top: 60px;
-	margin-bottom: 0px;
-}
-
 //** banner styling **//
 
 .banner {
@@ -390,8 +380,27 @@
 	padding-right: 10px;
 }
 
-/**--- New Tool Path ---**/
+/**--- New / Edit Tool Path ---**/
 
+.newtool-box {
+	margin-top: 50px;	
+	width: 550px;
+	height: 640px;
+	padding-bottom: 60px;
+}
+
+.toolform-large-container {
+	padding-left: 100px;
+	padding-top: 30px;
+}
+
+#price-field {
+	width: 35%;
+}
+
+#description {
+	height: 10em;
+}
 
 /**--- Registraion ----**/
 
@@ -414,4 +423,3 @@
 	height: 440px;
 	padding-bottom: 100px;
 }
-

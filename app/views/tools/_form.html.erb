@@ -1,38 +1,43 @@
-<%= form_for [@tool], :html => { :multipart => true } do |f| %>
-  <% if @tool.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@tool.errors.count, "error") %> prohibited this tool from being saved:</h2>
+<div class="newtool-container">
+  <div class="newtool-box">
+    <%= form_for [@tool], :html => { :multipart => true } do |f| %>
+      <% if @tool.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@tool.errors.count, "error") %> prohibited this tool from being saved:</h2>
 
-      <ul>
-      <% @tool.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+          <ul>
+          <% @tool.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <%= f.hidden_field :user_id, :value => current_user.id %>
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+      <%= f.hidden_field :user_id, :value => current_user.id %>
+      <div class="form-group">
+        <%= f.label :name %><br>
+        <%= f.text_field :name, class:'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :description %><br>
+        <%= f.text_area :description, :maxlength => 430, class:'form-control', id:'description' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :blurb %><br>
+        <%= f.text_area :blurb, :maxlength => 70, class:'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :rent_price_per_day_in_dollars %><br>
+        <%= f.text_field :rent_price, class:'form-control', id:'price-field' %>
+      </div>
+      <div class="field">
+          <%= f.label :Image %><br>
+          <%= f.file_field :tool_image %>
+      </div>
+      </br>
+      </br>
+      <div class="actions">
+        <%= f.submit class:"btn btn-default" %>
+      </div>
+    <% end %>
   </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description, :maxlength => 430 %>
-  </div>
-  <div class="field">
-    <%= f.label :blurb %><br>
-    <%= f.text_area :blurb, :maxlength => 70 %>
-  </div>
-  <div class="field">
-    <%= f.label :rent_price_per_day %><br>
-    $<%= f.text_field :rent_price %>.00
-  </div>
-  </br>
-  <div class="field">
-    <%= f.file_field :tool_image %>
-  </div>
-  </br>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>
