@@ -260,6 +260,52 @@
 
 /**---------index---------**/
 
-.index-page-container {
-	margin-left: 100px;
+.index-tools {
+	padding-top: 50px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    background-color: #FFFFFF;
+}
+
+.index-tool-row {
+	margin-bottom: 30px;
+}
+
+.index-tool-container {
+	height: 250px;
+	width: 200px;
+	background-color: white;
+	color: #222222;
+	border: solid 1px #d9d9de;
+	margin-bottom: 30px;
+}
+
+.index-tool-image {
+	height: 110px;
+	width: 100px;
+	padding-top: 10px;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.index-tool-body {
+	padding-left: 10px;
+	border-top: solid 1px #d9d9de;
+	font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.index-tool-name {
+	font-weight: 900;
+	font-size: 14px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+}
+
+.index-tool-details {
+	position: absolute;
+    bottom: 0;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
 }

@@ -15,7 +15,7 @@
                 </div>
             <% end %>
         <li>
-          <%= link_to 'Browse', '#' %>
+          <%= link_to 'Browse', tools_path %>
         </li>
         <li>
           <%= link_to 'Home', root_path %>
@@ -28,6 +28,9 @@
         </li>
         <li>
           <%= link_to 'Manage', manage_tools_path %>
+        </li>
+        <li>
+          <%= link_to 'Add Tool', new_tool_path %>
         </li>
         <li>  
             <% if current_user.present? %>

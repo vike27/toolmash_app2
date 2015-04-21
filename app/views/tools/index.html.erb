@@ -1,35 +1,39 @@
-<p id="notice"><%= notice %></p>
+<div class="large-index-container">
+    <div class="container-fluid">
+        <div class="index-container">
+
+            <h1>Listing Tools</h1>
+
+              <div class="index-tools">
+
+                <div class="row index-tool-row">
+                <% @tools.each do |tool| %>
+                <div class="col-md-2">
+                  <div class="index-tool-container">
+                    <div class="index-tool-image">
+                      <div><%= image_tag tool.tool_image.url(:thumb) %></div>
+                    </div>
+                    <div class="index-tool-body">
+                      <div class="index-tool-text">
+                        <div class="index-tool-name">
+                          <div><%= tool.name %></div> </br>
+                        </div>
+                    
+                        <div class="index-tool-details">
+                          <div>$ <%= tool.rent_price %>.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <% end %>
+                </div>
+              </div>
+            <br>
+
+            <%= link_to 'New Tool', new_tool_path %>
 
 
-
-<div class="fluid-container index-page-container">
-  <div class="row">
-
-    <div class="index-container">
-
-        <h1>Listing Tools</h1>
-
-        <div>
-            <% @tools.each do |tool| %>
-                <div>Name:</div> 
-                <div><%= tool.name %></div> </br>
-                <div><%= image_tag tool.tool_image.url(:thumb) %></div>
-                <div>Description:<div> 
-                <div><%= tool.description %></div> </br>
-                <div><%= link_to 'Show', tool_path(tool) %></div>
-                <div><%= link_to 'Edit', edit_tool_path(tool) %></div>
-                <div><%= link_to 'Delete', tool_path(tool), method: :delete, data: { confirm: 'Are you sure?' } %></div> </br>
-            <% end %>
-        </div>
-
-        <br>
-
-        <%= link_to 'New Tool', new_tool_path %>
-
+      </div>
     </div>
-
-  </div>
 </div>
-
-
-
