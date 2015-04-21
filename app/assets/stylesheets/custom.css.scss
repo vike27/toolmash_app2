@@ -262,6 +262,7 @@
 
 .index-tools {
 	padding-top: 50px;
+	padding-bottom: 100px;
 	margin-left: auto;
     margin-right: auto;
     width: 1200px;
@@ -274,7 +275,7 @@
 
 .index-tool-container {
 	height: 250px;
-	width: 200px;
+	width: 180px;
 	background-color: white;
 	color: #222222;
 	border: solid 1px #d9d9de;
@@ -292,14 +293,15 @@
 
 .index-tool-body {
 	padding-left: 10px;
+	padding-right: 5px;
 	border-top: solid 1px #d9d9de;
 	font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
 .index-tool-name {
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 14px;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	padding-top: 10px;
 }
 
@@ -308,4 +310,14 @@
     bottom: 0;
     padding-bottom: 5px;
     margin-bottom: 30px;
+}
+
+.index-container h1 {
+	padding-left: 60px;
+	padding-top: 50px;
+}
+
+.small-index-boxes {
+	padding-left: 10px;
+	padding-right: 10px;
 }

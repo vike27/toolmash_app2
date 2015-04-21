@@ -17,7 +17,11 @@
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :maxlength => 430 %>
+  </div>
+  <div class="field">
+    <%= f.label :blurb %><br>
+    <%= f.text_area :blurb, :maxlength => 70 %>
   </div>
   <div class="field">
     <%= f.label :rent_price_per_day %><br>
