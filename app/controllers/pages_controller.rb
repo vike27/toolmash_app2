@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 		@tools = Tool.order("Random()").first(6)
 	end
 
+	def about
+	end
+	
 end

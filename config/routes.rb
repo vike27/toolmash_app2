@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     get :manage, :on => :collection
   end
 
-
+  get 'about' => 'pages#about'
 
 
 

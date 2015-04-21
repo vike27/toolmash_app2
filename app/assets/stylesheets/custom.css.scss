@@ -11,15 +11,17 @@
 
 .navbar {
    border: 0px;
-   background: transparent;
+   background: #d9534f;
+   border-bottom: 1px solid black;
+   padding-bottom: 5px;
+   padding-top: 5px;
 }
 
 #navigation {
-    background: transparent;
+    background-color: #d9534f;
 }
 
 .container-fluid {
-	background: transparent;
 }
 
 .navbar li > a { 
@@ -27,15 +29,16 @@
 } 
 
 .navbar-default .navbar-brand {
-  color: #d9534f;
-  padding-top: 35px;
+  color: #FFFFFF;
+  padding-top: 15px;
   padding-left: 25px;
   font-size: 36px;
   font-family: 'Lobster', cursive;
 }
 
 .navbar-container-right {
-	padding-top: 30px;
+	padding-top: 1px;
+	padding-top: 5px;
 	padding-right: 25px;
 	font-size: 14px;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -44,6 +47,7 @@
 
 .navbar-form {
 	margin: 0px;
+	padding-top: 2.5px;
 }
 
 #notice {
