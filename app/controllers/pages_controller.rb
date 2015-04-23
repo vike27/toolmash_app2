@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
 	def home
-		@tools = Tool.order("Random()").first(6)
+		@tools = Tool.limit(6).order("RANDOM()")
 	end
 
 	def about
